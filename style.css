@@ -360,26 +360,20 @@ button:active {
 ========================= */
 
 .message {
-
-    max-height: 0;
-
+    height: 0;
     opacity: 0;
-
     overflow: hidden;
-
-    transition:
-        max-height 1s ease,
+    transition: 
+        height 1s ease,
         opacity 1s ease,
         margin-top 1s ease;
 }
 
 .message.show {
-
-    max-height: 500px;
-
+    height: auto;
     opacity: 1;
-
     margin-top: 30px;
+    overflow: visible;
 }
 
 .message h2 {
