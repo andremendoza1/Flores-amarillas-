@@ -45,8 +45,17 @@ button.addEventListener("click", () => {
 
     typeWriter();
 
-});
+    // Llevar suavemente al mensaje en celulares
+    setTimeout(() => {
 
+        message.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+
+    }, 1000);
+
+});
 
 // ==========================================
 // EFECTO DE ESCRITURA
