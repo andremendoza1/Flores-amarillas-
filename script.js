@@ -37,15 +37,27 @@ button.addEventListener("click", () => {
 
     opened = true;
 
+    // Reproducir música
+    const music = document.getElementById("music");
+
+    music.volume = 0.5;
+
+    music.play().catch(error => {
+        console.log("El navegador bloqueó la reproducción:", error);
+    });
+
+    // Mostrar mensaje
     message.classList.add("show");
 
     button.innerHTML = "🌻 Para ti, con cariño 🌻";
 
+    // Explosión de flores y corazones
     createExplosion();
 
+    // Escribir mensaje
     typeWriter();
 
-    // Llevar suavemente al mensaje en celulares
+    // Llevar al mensaje
     setTimeout(() => {
 
         message.scrollIntoView({
