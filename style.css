@@ -22,8 +22,10 @@ body {
    IMG
 ========================= */
 .flower-image {
-    width: 300px;
+    width: min(300px, 75vw);
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 
